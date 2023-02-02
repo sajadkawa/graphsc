@@ -20,7 +20,7 @@ from dgl.utils import expand_as_pair
 from sklearn.model_selection import train_test_split
 from torch.nn.functional import binary_cross_entropy_with_logits as BCELoss
 
-import models
+#import models
 
 
 class InnerProductDecoder(nn.Module):

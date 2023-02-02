@@ -8,7 +8,7 @@ import h5py
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import scanpy.api as sc
+import scanpy as sc
 import scipy as sp
 import seaborn as sns
 import torch
@@ -184,7 +184,7 @@ def run_leiden(data, params ={}):
     Returns:
         [type]: [description]
     """
-    import scanpy.api as sc
+    import scanpy as sc
     adata = sc.AnnData(data)
     sc.pp.neighbors(adata, use_rep='X', n_neighbors = 300, n_pcs = 0)
     sc.tl.leiden(adata, **params)
